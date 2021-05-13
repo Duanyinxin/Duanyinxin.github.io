@@ -17,7 +17,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Duanyinxin/image@master/blog/theme_example.5t6g04a1cvs0.png">
 <meta property="article:published_time" content="2021-05-09T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-05-13T08:02:58.407Z">
+<meta property="article:modified_time" content="2021-05-13T08:42:33.979Z">
 <meta property="article:author" content="Enosh Duan">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -157,7 +157,7 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
+    <h1 class="article-title_code_ant" itemprop="name">
       blog个性化设置
     </h1>
   
@@ -174,7 +174,7 @@
         <p>本篇主要来写个人blog的个性化设置。</p>
 <span id="more"></span>
 
-<h2 id="01主题"><a href="#01主题" class="headerlink" title="01主题"></a>01主题</h2><h3 id="step1：选择自己喜欢的主题并下载"><a href="#step1：选择自己喜欢的主题并下载" class="headerlink" title="step1：选择自己喜欢的主题并下载"></a>step1：选择自己喜欢的主题并下载</h3><p>hexo官方主题网页：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<h1 id="01主题"><a href="#01主题" class="headerlink" title="01主题"></a>01主题</h1><h3 id="step1：选择自己喜欢的主题并下载"><a href="#step1：选择自己喜欢的主题并下载" class="headerlink" title="step1：选择自己喜欢的主题并下载"></a>step1：选择自己喜欢的主题并下载</h3><p>hexo官方主题网页：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
 <h4 id="主题下载："><a href="#主题下载：" class="headerlink" title="主题下载："></a>主题下载：</h4><h5 id="方法一：git下载"><a href="#方法一：git下载" class="headerlink" title="方法一：git下载"></a>方法一：git下载</h5><p>在命令行blog路径下输入：</p>
 <p><code>git clone https://github.com/authorname/themename.git themes/themename</code></p>
 <p>该命令是将主题作者的主题文件夹复制到你的blog的主题文件夹下。</p>
@@ -188,15 +188,29 @@
 <h3 id="step3：上传"><a href="#step3：上传" class="headerlink" title="step3：上传"></a>step3：上传</h3><p>在命令行输入</p>
 <p><code>hexo g</code></p>
 <p><code>hexo d</code></p>
-<h2 id="02更改头像"><a href="#02更改头像" class="headerlink" title="02更改头像"></a>02更改头像</h2><h3 id="方法1本地头像"><a href="#方法1本地头像" class="headerlink" title="方法1本地头像"></a>方法1本地头像</h3><h4 id="step1：准备头像"><a href="#step1：准备头像" class="headerlink" title="step1：准备头像"></a>step1：准备头像</h4><p>在themes\themename文件夹下新建assets文件夹，将头像图片放在assets文件夹下</p>
-<h4 id="step2：修改配置"><a href="#step2：修改配置" class="headerlink" title="step2：修改配置"></a>step2：修改配置</h4><p>在themes\themename文件夹下找到_config.yml文件，修改<code>avatar：</code>为<code>avatar: /assets/图片名称.后缀</code></p>
+<h1 id="02更改头像"><a href="#02更改头像" class="headerlink" title="02更改头像"></a>02更改头像</h1><h3 id="方法1：本地头像"><a href="#方法1：本地头像" class="headerlink" title="方法1：本地头像"></a>方法1：本地头像</h3><h4 id="step1：准备头像"><a href="#step1：准备头像" class="headerlink" title="step1：准备头像"></a>step1：准备头像</h4><p>在themes\themename文件夹下新建assets文件夹，将头像图片放在assets文件夹下</p>
+<h4 id="step2：修改配置"><a href="#step2：修改配置" class="headerlink" title="step2：修改配置"></a>step2：修改配置</h4><p>在themes\themename文件夹下找到_config.yml文件。</p>
+<p>修改<code>avatar：</code>为<code>avatar: /assets/图片名称.后缀</code></p>
 <h4 id="step3：上传-1"><a href="#step3：上传-1" class="headerlink" title="step3：上传"></a>step3：上传</h4><p><code>hexo g</code></p>
 <p><code>hexo d</code></p>
-<h3 id="方法2使用图床"><a href="#方法2使用图床" class="headerlink" title="方法2使用图床"></a>方法2使用图床</h3><h4 id="step1：制作图床"><a href="#step1：制作图床" class="headerlink" title="step1：制作图床"></a>step1：制作图床</h4><p>具体参考：<a target="_blank" rel="noopener" href="https://wangxinzhi0.github.io/post/picturebed/">https://wangxinzhi0.github.io/post/picturebed/</a></p>
-<h4 id="step2-：修改配置"><a href="#step2-：修改配置" class="headerlink" title="step2 ：修改配置"></a>step2 ：修改配置</h4><p>在themes\themename文件夹下找到_config.yml文件，修改<code>avatar：</code>为<code>avatar: 图床生成的链接</code></p>
+<h3 id="方法2：使用图床"><a href="#方法2：使用图床" class="headerlink" title="方法2：使用图床"></a>方法2：使用图床</h3><h4 id="step1：制作图床"><a href="#step1：制作图床" class="headerlink" title="step1：制作图床"></a>step1：制作图床</h4><p>具体参考：<a target="_blank" rel="noopener" href="https://wangxinzhi0.github.io/post/picturebed/">https://wangxinzhi0.github.io/post/picturebed/</a></p>
+<h4 id="step2-：修改配置"><a href="#step2-：修改配置" class="headerlink" title="step2 ：修改配置"></a>step2 ：修改配置</h4><p>在themes\themename文件夹下找到_config.yml文件。</p>
+<p>修改<code>avatar：</code>为<code>avatar: 图床生成的链接</code></p>
 <h4 id="step3：上传-2"><a href="#step3：上传-2" class="headerlink" title="step3：上传"></a>step3：上传</h4><p><code>hexo g</code></p>
 <p><code>hexo d</code></p>
+<h1 id="03更改网页图标"><a href="#03更改网页图标" class="headerlink" title="03更改网页图标"></a>03更改网页图标</h1><h4 id="step1：制作图标"><a href="#step1：制作图标" class="headerlink" title="step1：制作图标"></a>step1：制作图标</h4><p>制作网站：<a target="_blank" rel="noopener" href="http://www.fly63.com/php/ico/">http://www.fly63.com/php/ico/</a></p>
+<h4 id="step2：保存图标"><a href="#step2：保存图标" class="headerlink" title="step2：保存图标"></a>step2：保存图标</h4><p>将制作好的ico保存在themes/yilia/source/img文件夹中</p>
+<h4 id="step3：修改配置"><a href="#step3：修改配置" class="headerlink" title="step3：修改配置"></a>step3：修改配置</h4><p>在文件themes\yilia\layout_partial\head.ejs中修改以下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.favicon)&#123; %&gt;</span><br><span class="line">  &lt;link rel=&quot;icon&quot; href=&quot;/img/favicon.ico&quot;&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
 
+<h4 id="step4：上传"><a href="#step4：上传" class="headerlink" title="step4：上传"></a>step4：上传</h4><h1 id="04添加阅读统计"><a href="#04添加阅读统计" class="headerlink" title="04添加阅读统计"></a>04添加阅读统计</h1><h4 id="step1：添加不蒜子统计工具"><a href="#step1：添加不蒜子统计工具" class="headerlink" title="step1：添加不蒜子统计工具"></a>step1：添加不蒜子统计工具</h4><p>在themes/yilia/layout/_partial/after-footer.ejs最后添加</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="step2：更改显示样式"><a href="#step2：更改显示样式" class="headerlink" title="step2：更改显示样式"></a>step2：更改显示样式</h4><p>修改yilia/layout/partial/footer.ejs为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;footer id=&quot;footer&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;outer&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;footer-info&quot;&gt;</span><br><span class="line">      本站访问量&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;次&amp;nbsp;</span><br><span class="line">      本站访客数&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;人&amp;nbsp;</span><br><span class="line">      本页阅读量&lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;次&amp;nbsp;</span><br><span class="line">      &lt;div class=&quot;footer-left&quot;&gt;</span><br><span class="line">        &amp;copy; &lt;%= date(new Date(), &#x27;YYYY&#x27;) %&gt; &lt;%= config.author || config.title %&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;div class=&quot;footer-right&quot;&gt;</span><br><span class="line">        &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot;&gt;Hexo&lt;/a&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/footer&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="step3：上传-3"><a href="#step3：上传-3" class="headerlink" title="step3：上传"></a>step3：上传</h4><p>05修改文章标题格式</p>
+<h1 id="06添加文章字数统计及阅读时长"><a href="#06添加文章字数统计及阅读时长" class="headerlink" title="06添加文章字数统计及阅读时长"></a>06添加文章字数统计及阅读时长</h1><h4 id="step1：安装字数统计工具"><a href="#step1：安装字数统计工具" class="headerlink" title="step1：安装字数统计工具"></a>step1：安装字数统计工具</h4>
       
 
       
@@ -447,11 +461,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C++</a>
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+                <a href="javascript:void(0)" class="js-tag color4">C++</a>
               </li>
             
             <div class="clearfix"></div>
