@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>C语言的基本数据类型 | DYX的个人博客</title>
+  <title>C语言基础 | DYX的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本篇主要介绍C语言中的基本数据类型">
+  <meta name="description" content="本篇主要介绍C语言中的基础知识">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C语言的基本数据类型">
+<meta property="og:title" content="C语言基础">
 <meta property="og:url" content="http://example.com/2021/06/02/C%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="DYX的个人博客">
-<meta property="og:description" content="本篇主要介绍C语言中的基本数据类型">
+<meta property="og:description" content="本篇主要介绍C语言中的基础知识">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-06-01T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-06-02T07:34:50.707Z">
+<meta property="article:modified_time" content="2021-06-07T08:26:01.513Z">
 <meta property="article:author" content="Enosh Duan">
 <meta property="article:tag" content="C">
 <meta name="twitter:card" content="summary">
@@ -169,7 +169,7 @@
         
   
     <h1 class="article-title_code_ant" itemprop="name">
-      C语言的基本数据类型
+      C语言基础
     </h1>
   
 
@@ -183,10 +183,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本篇主要介绍C语言中的基本数据类型</p>
+        <p>本篇主要介绍C语言中的基础知识</p>
 <span id="more"></span>
 
-<h2 id="1、int类型"><a href="#1、int类型" class="headerlink" title="1、int类型"></a>1、int类型</h2><p>int类型是有符号整型，在32位的计算机中要用32位存储一个int值。</p>
+<h1 id="1-基础数据类型"><a href="#1-基础数据类型" class="headerlink" title="1 基础数据类型"></a>1 基础数据类型</h1><h2 id="1-1-int类型"><a href="#1-1-int类型" class="headerlink" title="1.1 int类型"></a>1.1 int类型</h2><p>int类型是有符号整型，在32位的计算机中要用32位存储一个int值。</p>
 <p>int类型的表示方法（以16为例）：</p>
 <ul>
 <li>十进制            （16）</li>
@@ -218,14 +218,198 @@
 <td>32</td>
 </tr>
 </tbody></table>
-<h2 id="2、char类型"><a href="#2、char类型" class="headerlink" title="2、char类型"></a>2、char类型</h2><p>char类型用于存储字符，在C语言中char类型的数据占一个字节，即8位。在赋值时需要使用单引号。</p>
+<h2 id="1-2-char类型"><a href="#1-2-char类型" class="headerlink" title="1.2 char类型"></a>1.2 char类型</h2><p>char类型用于存储字符，在C语言中char类型的数据占一个字节，即8位。在赋值时需要使用单引号。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*将字符T赋值给ch*/</span></span><br><span class="line"><span class="keyword">char</span> ch;</span><br><span class="line">ch = <span class="string">&#x27;T&#x27;</span>		<span class="comment">/*正确赋值方式*/</span></span><br><span class="line"><span class="comment">//ch = T		/*错误，此时的T是一个变量*/</span></span><br><span class="line"><span class="comment">//ch = &quot;T&quot;		/*错误，&quot;T&quot;代表的是一个字符串*/</span></span><br></pre></td></tr></table></figure>
 
 
 
-<h2 id="3、-Bool类型"><a href="#3、-Bool类型" class="headerlink" title="3、_Bool类型"></a>3、_Bool类型</h2><p>_Bool类型用于表示布尔值，即逻辑值true和false。</p>
-<h2 id="4、浮点型"><a href="#4、浮点型" class="headerlink" title="4、浮点型"></a>4、浮点型</h2><p>C语言中的浮点类型有float、double和long double。float类型必须至少能表示6位有效数字，取值范围为 10<sup>-37</sup> ~ 10<sup>+37</sup> 。double类型必须至少表示10位有效数字，其范围也是10<sup>-37</sup>~10<sup>37</sup>。long double需要的精度要求更高。</p>
-<h2 id="5、复数和虚数类型"><a href="#5、复数和虚数类型" class="headerlink" title="5、复数和虚数类型"></a>5、复数和虚数类型</h2><p>float _Complex为复数类型，其中包含两个float的值，分别表示实部和虚部。虚数类型则为float _Imaginary。</p>
+<h2 id="1-3-Bool类型"><a href="#1-3-Bool类型" class="headerlink" title="1.3 _Bool类型"></a>1.3 _Bool类型</h2><p>_Bool类型用于表示布尔值，即逻辑值true和false。</p>
+<h2 id="1-4-浮点型"><a href="#1-4-浮点型" class="headerlink" title="1.4 浮点型"></a>1.4 浮点型</h2><p>C语言中的浮点类型有float、double和long double。float类型必须至少能表示6位有效数字，取值范围为 10<sup>-37</sup> ~ 10<sup>+37</sup> 。double类型必须至少表示10位有效数字，其范围也是10<sup>-37</sup>~10<sup>37</sup>。long double需要的精度要求更高。</p>
+<h2 id="1-5-复数和虚数类型"><a href="#1-5-复数和虚数类型" class="headerlink" title="1.5 复数和虚数类型"></a>1.5 复数和虚数类型</h2><p>float _Complex为复数类型，其中包含两个float的值，分别表示实部和虚部。虚数类型则为float _Imaginary。</p>
+<h1 id="2-输入输出"><a href="#2-输入输出" class="headerlink" title="2 输入输出"></a>2 输入输出</h1><h2 id="2-1-输入-scanf"><a href="#2-1-输入-scanf" class="headerlink" title="2.1 输入 scanf()"></a>2.1 输入 scanf()</h2><ul>
+<li>scanf()读取基本变量类型的值，在变量名前加&amp;；</li>
+<li>scanf()读取字符串数组时，不需要加&amp;，数组名为该数组的首地址。</li>
+</ul>
+<p>scanf()中转换说明</p>
+<table>
+<thead>
+<tr>
+<th>转换说明</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>%c</td>
+<td>字符</td>
+</tr>
+<tr>
+<td>%d</td>
+<td>有符号十进制整数</td>
+</tr>
+<tr>
+<td>%e、%f、%g、%a</td>
+<td>浮点数</td>
+</tr>
+<tr>
+<td>%E、%F、%G、%A</td>
+<td>浮点数</td>
+</tr>
+<tr>
+<td>%i</td>
+<td>有符号十进制整数</td>
+</tr>
+<tr>
+<td>%o</td>
+<td>有符号八进制整数</td>
+</tr>
+<tr>
+<td>%p</td>
+<td>指针（地址）</td>
+</tr>
+<tr>
+<td>%s</td>
+<td>字符串</td>
+</tr>
+<tr>
+<td>%u</td>
+<td>无符号十进制整数</td>
+</tr>
+<tr>
+<td>%x、%X</td>
+<td>有符号十六进制整数</td>
+</tr>
+</tbody></table>
+<p>scanf()转换说明中的修饰符</p>
+<table>
+<thead>
+<tr>
+<th>转换说明</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>*</td>
+<td>抑制输入</td>
+</tr>
+<tr>
+<td>数字</td>
+<td>最大字段宽度。输入达到最大宽度，或者第一次遇到空白字符时停止</td>
+</tr>
+</tbody></table>
+<h2 id="2-2-输出printf"><a href="#2-2-输出printf" class="headerlink" title="2.2 输出printf()"></a>2.2 输出printf()</h2><p>转换说明</p>
+<table>
+<thead>
+<tr>
+<th>转换说明</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>%a</td>
+<td>浮点数、十六进制数、p计数法</td>
+</tr>
+<tr>
+<td>%A</td>
+<td>浮点数、十六进制数、p计数法</td>
+</tr>
+<tr>
+<td>%c</td>
+<td>单个字符</td>
+</tr>
+<tr>
+<td>%d</td>
+<td>有符号十进制整型</td>
+</tr>
+<tr>
+<td>%e</td>
+<td>浮点数、e记数法</td>
+</tr>
+<tr>
+<td>%E</td>
+<td>浮点数、e记数法</td>
+</tr>
+<tr>
+<td>%f</td>
+<td>浮点数、十进制</td>
+</tr>
+<tr>
+<td>%g</td>
+<td>根据值不同，自动选择%f或%e</td>
+</tr>
+<tr>
+<td>%G</td>
+<td>根据值不同，自动选择%f或%E</td>
+</tr>
+<tr>
+<td>%i</td>
+<td>有符号十进制整数</td>
+</tr>
+<tr>
+<td>%o</td>
+<td>无符号八进制整数</td>
+</tr>
+<tr>
+<td>%p</td>
+<td>指针</td>
+</tr>
+<tr>
+<td>%s</td>
+<td>字符串</td>
+</tr>
+<tr>
+<td>%u</td>
+<td>无符号十进制整数</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>无符号十六进制整数</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>无符号十六进制整数</td>
+</tr>
+<tr>
+<td>%%</td>
+<td>打印百分号%</td>
+</tr>
+</tbody></table>
+<p>printf()修饰符</p>
+<table>
+<thead>
+<tr>
+<th>转换说明</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>值为正，值前显示+；值为负，值前显示-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>左对齐</td>
+</tr>
+<tr>
+<td>空格</td>
+<td>值为正，值前显示一个空格；值为负，值前显示-</td>
+</tr>
+<tr>
+<td>#</td>
+<td>把结果转换成另一种形式</td>
+</tr>
+<tr>
+<td>0</td>
+<td>对于数值格式，用0来填充字段宽度</td>
+</tr>
+<tr>
+<td>数字</td>
+<td>最小字段宽度。可以自动加长</td>
+</tr>
+<tr>
+<td>.数字</td>
+<td>精度</td>
+</tr>
+</tbody></table>
 
       
 
@@ -369,7 +553,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81int%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">1、int类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81char%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">2、char类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81-Bool%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">3、_Bool类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E6%B5%AE%E7%82%B9%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">4、浮点型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E5%A4%8D%E6%95%B0%E5%92%8C%E8%99%9A%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">5、复数和虚数类型</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">1 基础数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-int%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 int类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-char%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 char类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-Bool%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 _Bool类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-%E6%B5%AE%E7%82%B9%E5%9E%8B"><span class="toc-number">1.4.</span> <span class="toc-text">1.4 浮点型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5-%E5%A4%8D%E6%95%B0%E5%92%8C%E8%99%9A%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.5.</span> <span class="toc-text">1.5 复数和虚数类型</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="toc-number">2.</span> <span class="toc-text">2 输入输出</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E8%BE%93%E5%85%A5-scanf"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 输入 scanf()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E8%BE%93%E5%87%BAprintf"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 输出printf()</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
